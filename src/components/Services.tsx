@@ -37,94 +37,77 @@ const services = [
     description: "Custom artistic designs for your nails",
     duration: "60 min",
     price: "$50"
-  },
-  {
-    icon: Sparkles,
-    title: "Dip Powder Nails",
-    description: "Durable and vibrant dip powder application",
-    duration: "50 min",
-    price: "$55"
-  },
-  {
-    icon: Heart,
-    title: "Paraffin Treatment",
-    description: "Moisturizing paraffin wax treatment for hands",
-    duration: "30 min",
-    price: "$30"
-  },
-  {
-    icon: Clock,
-    title: "Nail Repair",
-    description: "Fix broken or damaged nails professionally",
-    duration: "20 min",
-    price: "$15"
   }
 ]
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-16 sm:py-20 bg-gradient-to-b from-white to-[#F3E8FF]/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="inline-block mb-4">
-            <span className="px-6 py-2 bg-[#F3E8FF] text-[#6A0DAD] rounded-full font-semibold text-sm">
+            <span className="px-6 py-2 bg-[#F3E8FF] text-[#6A0DAD] rounded-full font-semibold text-sm shadow-sm">
               Our Services
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-4">
             Treatments We Offer
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             From classic manicures to artistic designs, we have everything you need
           </p>
         </div>
 
-        {/* Services Grid - 3x3 including VIP */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Services Grid - 2x3 including VIP */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <div
                 key={index}
-                className="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-purple-50"
+                className="group bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-lg hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 hover:-translate-y-2 hover:border-[#C084FC]/30 cursor-pointer"
               >
-                <div className="w-16 h-16 bg-[#F3E8FF] rounded-2xl flex items-center justify-center mb-6">
-                  <Icon className="w-8 h-8 text-[#6A0DAD]" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#F3E8FF] rounded-2xl flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-[#6A0DAD] group-hover:scale-110 transition-all duration-500">
+                  <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-[#6A0DAD] group-hover:text-white transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 sm:mb-3 group-hover:text-[#6A0DAD] transition-colors duration-300">{service.title}</h3>
+                <p className="text-gray-600 mb-5 sm:mb-6 leading-relaxed text-sm sm:text-base">{service.description}</p>
 
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100 group-hover:border-[#C084FC]/30 transition-colors duration-300">
                   <div className="flex items-center gap-2 text-gray-500">
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">{service.duration}</span>
                   </div>
-                  <span className="text-2xl font-bold text-[#6A0DAD]">{service.price}</span>
+                  <span className="text-xl sm:text-2xl font-bold text-[#6A0DAD]">{service.price}</span>
                 </div>
               </div>
             )
           })}
 
           {/* VIP Package - as part of the grid */}
-          <div className="bg-gradient-to-br from-[#6A0DAD] via-[#8B5CF6] to-[#C084FC] rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
-            <div>
+          <div className="group bg-gradient-to-br from-[#6A0DAD] via-[#8B5CF6] to-[#C084FC] rounded-3xl p-6 sm:p-8 text-white shadow-2xl hover:shadow-3xl hover:shadow-purple-500/40 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] flex flex-col justify-between cursor-pointer relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+
+            <div className="relative z-10">
               <div className="inline-block mb-4">
-                <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full font-semibold text-sm">
-                  Premium Package
+                <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full font-semibold text-sm group-hover:bg-white/30 transition-colors duration-300">
+                  ✨ Premium Package
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-3">VIP Package</h3>
-              <p className="text-white/90 mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3">VIP Package</h3>
+              <p className="text-white/90 mb-4 text-sm sm:text-base">
                 Complete luxury experience including manicure, pedicure, gel polish, and nail art
               </p>
             </div>
-            <div className="flex items-center justify-between pt-4 border-t border-white/20">
+            <div className="relative z-10 flex items-center justify-between pt-4 border-t border-white/20">
               <div className="flex items-center gap-2 text-white/80">
                 <Clock className="w-4 h-4" />
                 <span className="text-sm">120 min</span>
               </div>
-              <span className="text-2xl font-bold">$150</span>
+              <span className="text-xl sm:text-2xl font-bold">$150</span>
             </div>
           </div>
         </div>
