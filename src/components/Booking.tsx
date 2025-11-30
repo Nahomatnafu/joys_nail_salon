@@ -50,13 +50,11 @@ export default function Booking() {
           </div>
 
           {/* Calendly Embed */}
-          <div className="bg-[#6A0DAD] rounded-3xl p-2 sm:p-4 shadow-2xl">
-            <div
-              className="calendly-inline-widget rounded-2xl overflow-hidden"
-              data-url="https://calendly.com/nahomg116/30min?background_color=6a0dad&text_color=ffffff&primary_color=c084fc"
-              style={{ minWidth: "320px", height: "700px" }}
-            />
-          </div>
+          <div
+            className="calendly-inline-widget rounded-2xl overflow-hidden"
+            data-url="https://calendly.com/nahomg116/30min?background_color=6a0dad&text_color=ffffff&primary_color=c084fc"
+            style={{ minWidth: "320px", height: "700px" }}
+          />
 
           {/* Quick Contact Section */}
           <div className="mt-8 sm:mt-12 text-center">
