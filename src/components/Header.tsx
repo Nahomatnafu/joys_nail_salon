@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Heart } from "lucide-react"
+import Image from "next/image"
 
 export default function Header() {
   return (
@@ -9,21 +9,15 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#6A0DAD] via-[#8B5CF6] to-[#C084FC] rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:shadow-purple-500/50 transition-all duration-300 group-hover:scale-105">
-                <Heart className="w-6 h-6 text-white fill-white" />
-              </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-[#C084FC] rounded-full animate-pulse" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#6A0DAD] to-[#C084FC] bg-clip-text text-transparent">
-                Joy Nails
-              </span>
-              <span className="text-xs text-[#8B5CF6] font-medium tracking-wider">
-                LUXURY SALON
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/joys_nails_logo.png"
+              alt="Joy Nails Logo"
+              width={150}
+              height={60}
+              className="h-14 w-auto group-hover:scale-105 transition-transform duration-300"
+              priority
+            />
           </Link>
 
           {/* Navigation */}

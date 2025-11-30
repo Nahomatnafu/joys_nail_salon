@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Heart, Facebook, Instagram, Twitter } from "lucide-react"
+import Image from "next/image"
+import { Facebook, Instagram, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -10,11 +11,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#C084FC] to-[#F3E8FF] rounded-full flex items-center justify-center">
-                <Heart className="w-5 h-5 text-[#4C0A78] fill-[#4C0A78]" />
-              </div>
-              <span className="text-2xl font-bold">Joy Nails</span>
+            <div className="mb-6">
+              <Image
+                src="/joys_nails_logo.png"
+                alt="Joy Nails Logo"
+                width={120}
+                height={48}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 leading-relaxed">
               Premium nail care services in a luxurious, relaxing environment.
