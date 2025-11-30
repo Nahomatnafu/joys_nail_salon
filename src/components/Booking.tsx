@@ -61,9 +61,9 @@ export default function Booking() {
             <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 bg-white/10 backdrop-blur-sm rounded-2xl px-6 sm:px-8 py-4 sm:py-6">
               <p className="text-white/80 font-medium">Or contact us directly:</p>
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                <a href="tel:5551234567" className="flex items-center gap-2 text-white hover:text-[#C084FC] transition-colors duration-300">
+                <a href="tel:6126852161" className="flex items-center gap-2 text-white hover:text-[#C084FC] transition-colors duration-300">
                   <Phone className="w-5 h-5" />
-                  <span className="font-medium">(555) 123-4567</span>
+                  <span className="font-medium">612-685-2161</span>
                 </a>
                 <a href="mailto:hello@joynails.com" className="flex items-center gap-2 text-white hover:text-[#C084FC] transition-colors duration-300">
                   <Mail className="w-5 h-5" />

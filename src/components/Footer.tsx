@@ -53,7 +53,7 @@ export default function Footer() {
             <ul className="space-y-3 text-white/80">
               <li>123 Beauty Lane</li>
               <li>City, State 12345</li>
-              <li>(555) 123-4567</li>
+              <li>612-685-2161</li>
               <li>hello@joynails.com</li>
             </ul>
           </div>
