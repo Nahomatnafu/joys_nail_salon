@@ -37,6 +37,13 @@ const services = [
     description: "Custom artistic designs for your nails",
     duration: "60 min",
     price: "$50"
+  },
+  {
+    icon: Sparkles,
+    title: "Dip Powder Nails",
+    description: "Durable and vibrant dip powder application",
+    duration: "50 min",
+    price: "$55"
   }
 ]
 

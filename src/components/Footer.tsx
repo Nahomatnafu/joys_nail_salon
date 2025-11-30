@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <Image
-                src="/joys_nails_logo.png"
+                src="/joys_nail_logo.png"
                 alt="Joy Nails Logo"
                 width={120}
                 height={48}

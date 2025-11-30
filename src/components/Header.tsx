@@ -11,7 +11,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="/joys_nails_logo.png"
+              src="/joys_nail_logo.png"
               alt="Joy Nails Logo"
               width={150}
               height={60}
