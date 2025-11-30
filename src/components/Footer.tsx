@@ -13,11 +13,11 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <Image
-                src="/joys_nail_logo.png"
+                src="/joys_nail_logo_v02.png"
                 alt="Joy Nails Logo"
-                width={120}
-                height={48}
-                className="h-12 w-auto brightness-0 invert"
+                width={160}
+                height={64}
+                className="h-14 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-white/80 leading-relaxed">

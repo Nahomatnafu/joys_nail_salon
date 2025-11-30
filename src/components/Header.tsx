@@ -11,11 +11,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="/joys_nail_logo.png"
+              src="/joys_nail_logo_v02.png"
               alt="Joy Nails Logo"
-              width={150}
-              height={60}
-              className="h-14 w-auto group-hover:scale-105 transition-transform duration-300"
+              width={200}
+              height={80}
+              className="h-16 w-auto group-hover:scale-105 transition-transform duration-300"
               priority
             />
           </Link>
