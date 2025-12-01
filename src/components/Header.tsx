@@ -12,18 +12,17 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E9D5FF] shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#BFDBFE] shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="/joys_nail_logo_v02.png"
-              alt="Joy Nails Logo"
-              width={200}
-              height={80}
-              className="h-14 sm:h-16 w-auto group-hover:scale-105 transition-transform duration-300"
-              priority
+              src="/lakeside_logo_v01.png"
+              alt="Lakeside Nail & Spa"
+              width={180}
+              height={60}
+              className="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
             />
           </Link>
 
@@ -31,24 +30,24 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="#services"
-              className="relative text-gray-700 hover:text-[#6A0DAD] transition-all duration-300 font-medium group"
+              className="relative text-gray-700 hover:text-[#1E40AF] transition-all duration-300 font-medium group"
             >
               Services
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6A0DAD] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1E40AF] transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
               href="#gallery"
-              className="relative text-gray-700 hover:text-[#6A0DAD] transition-all duration-300 font-medium group"
+              className="relative text-gray-700 hover:text-[#1E40AF] transition-all duration-300 font-medium group"
             >
               Gallery
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6A0DAD] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1E40AF] transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
               href="#contact"
-              className="relative text-gray-700 hover:text-[#6A0DAD] transition-all duration-300 font-medium group"
+              className="relative text-gray-700 hover:text-[#1E40AF] transition-all duration-300 font-medium group"
             >
               Contact
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6A0DAD] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1E40AF] transition-all duration-300 group-hover:w-full" />
             </Link>
           </nav>
 
@@ -57,7 +56,7 @@ export default function Header() {
             {/* Book Now Button */}
             <Link
               href="#booking"
-              className="hidden sm:block glow-button bg-[#C084FC] hover:bg-[#A855F7] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+              className="hidden sm:block glow-button bg-[#60A5FA] hover:bg-[#3B82F6] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30"
             >
               Book Now
             </Link>
@@ -65,13 +64,13 @@ export default function Header() {
             {/* Hamburger Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-2 rounded-xl hover:bg-[#F3E8FF] transition-colors duration-300"
+              className="md:hidden p-2 rounded-xl hover:bg-[#DBEAFE] transition-colors duration-300"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6 text-[#6A0DAD]" />
+                <X className="w-6 h-6 text-[#1E40AF]" />
               ) : (
-                <Menu className="w-6 h-6 text-[#6A0DAD]" />
+                <Menu className="w-6 h-6 text-[#1E40AF]" />
               )}
             </button>
           </div>
@@ -80,7 +79,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-md border-b border-[#E9D5FF] shadow-lg transition-all duration-300 ease-in-out ${
+        className={`md:hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-md border-b border-[#BFDBFE] shadow-lg transition-all duration-300 ease-in-out ${
           isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
@@ -88,28 +87,28 @@ export default function Header() {
           <Link
             href="#services"
             onClick={closeMenu}
-            className="text-gray-700 hover:text-[#6A0DAD] hover:bg-[#F3E8FF] px-4 py-3 rounded-xl transition-all duration-300 font-medium"
+            className="text-gray-700 hover:text-[#1E40AF] hover:bg-[#DBEAFE] px-4 py-3 rounded-xl transition-all duration-300 font-medium"
           >
             Services
           </Link>
           <Link
             href="#gallery"
             onClick={closeMenu}
-            className="text-gray-700 hover:text-[#6A0DAD] hover:bg-[#F3E8FF] px-4 py-3 rounded-xl transition-all duration-300 font-medium"
+            className="text-gray-700 hover:text-[#1E40AF] hover:bg-[#DBEAFE] px-4 py-3 rounded-xl transition-all duration-300 font-medium"
           >
             Gallery
           </Link>
           <Link
             href="#contact"
             onClick={closeMenu}
-            className="text-gray-700 hover:text-[#6A0DAD] hover:bg-[#F3E8FF] px-4 py-3 rounded-xl transition-all duration-300 font-medium"
+            className="text-gray-700 hover:text-[#1E40AF] hover:bg-[#DBEAFE] px-4 py-3 rounded-xl transition-all duration-300 font-medium"
           >
             Contact
           </Link>
           <Link
             href="#booking"
             onClick={closeMenu}
-            className="sm:hidden bg-[#C084FC] hover:bg-[#A855F7] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 text-center mt-2"
+            className="sm:hidden bg-[#60A5FA] hover:bg-[#3B82F6] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 text-center mt-2"
           >
             Book Now
           </Link>
