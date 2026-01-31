@@ -6,20 +6,20 @@ import { Sparkles } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden bg-[#DBEAFE]">
+    <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden bg-[#F3E8FF]">
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="relative z-10 text-center lg:text-left">
-            {/* Decorative Blue Circles */}
-            <div className="absolute -left-20 -top-20 w-64 h-64 bg-[#60A5FA] rounded-full opacity-20 blur-3xl animate-pulse" />
-            <div className="absolute left-10 top-40 w-40 h-40 bg-[#1E40AF] rounded-full opacity-15 blur-2xl" />
-            <div className="absolute -left-10 bottom-10 w-52 h-52 bg-[#3B82F6] rounded-full opacity-10 blur-3xl" />
+            {/* Decorative Purple Circles */}
+            <div className="absolute -left-20 -top-20 w-64 h-64 bg-[#C084FC] rounded-full opacity-20 blur-3xl animate-pulse" />
+            <div className="absolute left-10 top-40 w-40 h-40 bg-[#6A0DAD] rounded-full opacity-15 blur-2xl" />
+            <div className="absolute -left-10 bottom-10 w-52 h-52 bg-[#9333EA] rounded-full opacity-10 blur-3xl" />
 
             {/* Premium Badge */}
             <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-6 sm:mb-8 shadow-md hover:shadow-lg transition-shadow duration-300 relative z-10">
-              <Sparkles className="w-4 h-4 text-[#60A5FA] animate-pulse" />
+              <Sparkles className="w-4 h-4 text-[#C084FC] animate-pulse" />
               <span className="text-sm font-medium text-gray-700">Premium Nail Care</span>
             </div>
 
@@ -32,13 +32,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 relative z-10 justify-center lg:justify-start">
               <Link
                 href="#booking"
-                className="group border-2 border-[#1E40AF] bg-[#1E40AF] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#1E3A8A] hover:border-[#1E3A8A] hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 text-center"
+                className="group border-2 border-[#6A0DAD] bg-[#6A0DAD] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#5a0b94] hover:border-[#5a0b94] hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 text-center"
               >
                 Book Appointment
               </Link>
               <Link
                 href="#services"
-                className="group border-2 border-[#1E40AF] text-[#1E40AF] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#1E40AF] hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 text-center"
+                className="group border-2 border-[#6A0DAD] text-[#6A0DAD] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#6A0DAD] hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 text-center"
               >
                 View Services
               </Link>
@@ -58,7 +58,7 @@ export default function Hero() {
                 />
               </div>
               {/* Floating decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-[#60A5FA] to-[#1E40AF] rounded-2xl opacity-80 blur-sm -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-[#C084FC] to-[#6A0DAD] rounded-2xl opacity-80 blur-sm -z-10" />
             </div>
           </div>
         </div>

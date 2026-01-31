@@ -42,12 +42,12 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 sm:py-20 bg-gradient-to-b from-white to-[#DBEAFE]/30">
+    <section id="services" className="py-16 sm:py-20 bg-gradient-to-b from-white to-[#F3E8FF]/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-block mb-4">
-            <span className="px-6 py-2 bg-[#DBEAFE] text-[#1E40AF] rounded-full font-semibold text-sm shadow-sm">
+            <span className="px-6 py-2 bg-[#F3E8FF] text-[#6A0DAD] rounded-full font-semibold text-sm shadow-sm">
               Our Services
             </span>
           </div>
@@ -66,27 +66,27 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-lg hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2 hover:border-[#60A5FA]/30 cursor-pointer"
+                className="group bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-lg hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 hover:-translate-y-2 hover:border-[#C084FC]/30 cursor-pointer"
               >
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#DBEAFE] rounded-2xl flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-[#1E40AF] group-hover:scale-110 transition-all duration-500">
-                  <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-[#1E40AF] group-hover:text-white transition-colors duration-500" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#F3E8FF] rounded-2xl flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-[#6A0DAD] group-hover:scale-110 transition-all duration-500">
+                  <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-[#6A0DAD] group-hover:text-white transition-colors duration-500" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 sm:mb-3 group-hover:text-[#1E40AF] transition-colors duration-300">{service.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 sm:mb-3 group-hover:text-[#6A0DAD] transition-colors duration-300">{service.title}</h3>
                 <p className="text-gray-600 mb-5 sm:mb-6 leading-relaxed text-sm sm:text-base">{service.description}</p>
 
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100 group-hover:border-[#60A5FA]/30 transition-colors duration-300">
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100 group-hover:border-[#C084FC]/30 transition-colors duration-300">
                   <div className="flex items-center gap-2 text-gray-500">
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">{service.duration}</span>
                   </div>
-                  <span className="text-xl sm:text-2xl font-bold text-[#1E40AF]">{service.price}</span>
+                  <span className="text-xl sm:text-2xl font-bold text-[#6A0DAD]">{service.price}</span>
                 </div>
               </div>
             )
           })}
 
           {/* VIP Package - as part of the grid */}
-          <div className="group bg-gradient-to-br from-[#1E40AF] via-[#3B82F6] to-[#60A5FA] rounded-3xl p-6 sm:p-8 text-white shadow-2xl hover:shadow-3xl hover:shadow-blue-500/40 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] flex flex-col justify-between cursor-pointer relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-[#6A0DAD] via-[#8B5CF6] to-[#C084FC] rounded-3xl p-6 sm:p-8 text-white shadow-2xl hover:shadow-3xl hover:shadow-purple-500/40 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] flex flex-col justify-between cursor-pointer relative overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />

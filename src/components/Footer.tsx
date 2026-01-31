@@ -6,18 +6,18 @@ import { Facebook, Instagram, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-[#1E3A8A] text-white py-16">
+    <footer id="contact" className="bg-[#4C0A78] text-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
             <div className="mb-6">
               <Image
-                src="/lakeside_logo_v01.png"
-                alt="Lakeside Nail & Spa"
-                width={180}
-                height={60}
-                className="h-12 w-auto brightness-0 invert"
+                src="/joys_nail_logo_v02.png"
+                alt="Joy Nails Logo"
+                width={160}
+                height={64}
+                className="h-14 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-white/80 leading-relaxed">
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>123 Beauty Lane</li>
               <li>City, State 12345</li>
               <li>612-685-2161</li>
-              <li>hello@lakesidenailspa.com</li>
+              <li>hello@joynails.com</li>
             </ul>
           </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
         {/* Social & Copyright */}
         <div className="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/60 text-sm">
-            © 2024 Lakeside Nail & Spa Salon. All rights reserved.
+            © 2024 Joy Nails. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
