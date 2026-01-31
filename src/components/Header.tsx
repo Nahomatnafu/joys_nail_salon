@@ -57,7 +57,7 @@ export default function Header() {
             {/* Book Now Button */}
             <Link
               href="#booking"
-              className="hidden sm:block glow-button bg-[#C084FC] hover:bg-[#A855F7] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+              className="hidden sm:block glow-button bg-[#8B5CF6] hover:bg-[#6A0DAD] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
             >
               Book Now
             </Link>
@@ -109,7 +109,7 @@ export default function Header() {
           <Link
             href="#booking"
             onClick={closeMenu}
-            className="sm:hidden bg-[#C084FC] hover:bg-[#A855F7] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 text-center mt-2"
+            className="sm:hidden bg-[#8B5CF6] hover:bg-[#6A0DAD] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 text-center mt-2"
           >
             Book Now
           </Link>

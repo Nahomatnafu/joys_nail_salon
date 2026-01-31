@@ -15,7 +15,7 @@ export default function Hero() {
             {/* Decorative Purple Circles */}
             <div className="absolute -left-20 -top-20 w-64 h-64 bg-[#C084FC] rounded-full opacity-20 blur-3xl animate-pulse" />
             <div className="absolute left-10 top-40 w-40 h-40 bg-[#6A0DAD] rounded-full opacity-15 blur-2xl" />
-            <div className="absolute -left-10 bottom-10 w-52 h-52 bg-[#9333EA] rounded-full opacity-10 blur-3xl" />
+            <div className="absolute -left-10 bottom-10 w-52 h-52 bg-[#8B5CF6] rounded-full opacity-10 blur-3xl" />
 
             {/* Premium Badge */}
             <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-6 sm:mb-8 shadow-md hover:shadow-lg transition-shadow duration-300 relative z-10">
@@ -32,7 +32,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 relative z-10 justify-center lg:justify-start">
               <Link
                 href="#booking"
-                className="group border-2 border-[#6A0DAD] bg-[#6A0DAD] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#5a0b94] hover:border-[#5a0b94] hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 text-center"
+                className="group border-2 border-[#6A0DAD] bg-[#6A0DAD] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#5B0B9E] hover:border-[#5B0B9E] hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 text-center"
               >
                 Book Appointment
               </Link>
